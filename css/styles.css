@@ -1,0 +1,228 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ecf0f1;
+}
+
+/* Основные стили */
+main {
+    padding: 20px;
+    min-height: calc(100vh - 230px);
+}
+
+.hero {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.products {
+    margin-top: 30px;
+}
+
+/* Стили для таблицы товаров */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Цвет для четных строк */
+}
+
+tr:hover {
+    background-color: #dcdcdc; /* Цвет при наведении на строку */
+}
+
+/* Стили для форм */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 10px; 
+}
+
+form input, form textarea {
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+
+form button {
+    background-color: #3498db; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+form button:hover {
+   background-color: #2980b9; /* Цвет кнопки при наведении */
+}
+
+/* Стили для футера */
+footer {
+   background-color: #3498db; 
+   color: white; 
+   text-align: center; 
+   padding: 15px 0; 
+   position: relative; 
+   bottom: 0; 
+   width: 100%; 
+}
+/* Стили для карусели */
+.reviews-carousel {
+    margin-top: 30px;
+    margin-left: 30%;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 40%; /* Ширина контейнера */
+}
+
+.review-card {
+    min-width: 300px; /* Ширина карточки */
+    margin: 0 10px; /* Отступы между карточками */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card h3 {
+   margin-top: 10px;
+   font-weight: normal;
+}
+
+/* Кнопки навигации */
+.prev, .next {
+   background-color: #3498db;
+   color: white;
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+   background-color: #2980b9; /* Цвет кнопок при наведении */
+}
+/* Стили для форм авторизации и регистрации */
+.auth-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .auth-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+ }
+ 
+ .auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ .auth-form button:hover {
+    background-color: #2980b9; /* Цвет кнопки при наведении */
+ }
+ 
+ .error {
+    color: red;
+    text-align: center;
+ }
+ /* Стили для карточек товара */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33% - 20px); /* Три карточки в ряд */
+}
+
+.product-card h3 {
+    margin-top: 0;
+}
